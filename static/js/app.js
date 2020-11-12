@@ -127,7 +127,7 @@ function buildCharts(sample) {
             tickcolor: '#000000',
             tickfont: {
               size: 14,
-              color: 'rgba(255,255,255,1)'
+              color: 'rgba(0,0,0,1)'
             },
             gridcolor: '#343a40',
             gridwidth: 1,
@@ -147,7 +147,7 @@ function buildCharts(sample) {
             tickcolor: '#000000',
             tickfont: {
               size: 14,
-              color: 'rgba(255,255,255,1)'
+              color: 'rgba(0,0,0,1)'
             },
             zerolinecolor: '#000000',
             zerolinewidth: 2,
@@ -156,7 +156,7 @@ function buildCharts(sample) {
             linecolor: '#636363',
             linewidth: 6
           },
-          showlegend: false,
+          showlegend: true,
           height: 600,
           width: 1100
     };
