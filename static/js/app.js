@@ -84,7 +84,7 @@ function buildCharts(sample) {
 
     // plotly call
 
-    Plotly.newPlot("bar", barData, barLayout);
+    Plotly.newPlot("bar", barChartData, barChartLayout);
 
     
 
@@ -111,7 +111,7 @@ function buildCharts(sample) {
     };
 
     // plotly call
-    Plotly.newPlot("bubble", bubbleData, bubbleLayout);
+    Plotly.newPlot("bubble", bubbleChartData, bubbleChartLayout);
 
     });
 }
