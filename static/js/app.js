@@ -106,7 +106,7 @@ function buildCharts(sample) {
             font: {
               family: 'Courier New, monospace',
               size: 18,
-              color: '#fff',
+              color: '#000000',
             },
           }, 
           paper_bgcolor:'rgba(0,0,0,0)',
@@ -117,14 +117,14 @@ function buildCharts(sample) {
               font: {
                 family: 'Courier New, monospace',
                 size: 16,
-                color: '#fff',
+                color: '#000000',
               },
             },
             showgrid: true,
             zeroline: true,
             showline: true,
             mirror: 'ticks',
-            tickcolor: '#fff',
+            tickcolor: '#000000',
             tickfont: {
               size: 14,
               color: 'rgba(255,255,255,1)'
@@ -140,16 +140,16 @@ function buildCharts(sample) {
               font: {
                 family: 'Courier New, monospace',
                 size: 16,
-                color: '#fff',
+                color: '#000000',
               },
             },  
             mirror: 'ticks',
-            tickcolor: '#fff',
+            tickcolor: '#000000',
             tickfont: {
               size: 14,
               color: 'rgba(255,255,255,1)'
             },
-            zerolinecolor: '#fff',
+            zerolinecolor: '#000000',
             zerolinewidth: 2,
             gridcolor: '#343a40',
             gridwidth: 1,
