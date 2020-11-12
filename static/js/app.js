@@ -94,8 +94,8 @@ function buildCharts(sample) {
     var bubbleChartData = [{
         x: otu_ids,
         y: sample_values,
-        text: "markers",
-        type: "bubble",
+        text: otu_labels,
+        mode: 'markers',
         marker: {
             size: sample_values,
             color: otu_ids,
@@ -104,11 +104,64 @@ function buildCharts(sample) {
     }];
 
     var bubbleChartLayout = {
-        title: "Bacteria Cultures Per Sample",
-        margin: { t:0},
-        hovermode: "closest",
-        xaxis: {title: "OTU ID"},
-        margin: {t:30}
+        title: {
+            text: `OTU Species Results (Sample ${sample})`,
+            font: {
+              family: 'Courier New, monospace',
+              size: 18,
+              color: '#fff',
+            },
+          }, 
+          paper_bgcolor:'rgba(0,0,0,0)',
+          plot_bgcolor:'rgba(0,0,0,0)',
+          xaxis: {
+            title: {
+              text: `OTU ID`,
+              font: {
+                family: 'Courier New, monospace',
+                size: 16,
+                color: '#fff',
+              },
+            },
+            showgrid: true,
+            zeroline: true,
+            showline: true,
+            mirror: 'ticks',
+            tickcolor: '#fff',
+            tickfont: {
+              size: 14,
+              color: 'rgba(255,255,255,1)'
+            },
+            gridcolor: '#343a40',
+            gridwidth: 1,
+            linecolor: '#636363',
+            linewidth: 6
+          },
+          yaxis: {
+            title: {
+              text: `Amount`,
+              font: {
+                family: 'Courier New, monospace',
+                size: 16,
+                color: '#fff',
+              },
+            },  
+            mirror: 'ticks',
+            tickcolor: '#fff',
+            tickfont: {
+              size: 14,
+              color: 'rgba(255,255,255,1)'
+            },
+            zerolinecolor: '#fff',
+            zerolinewidth: 2,
+            gridcolor: '#343a40',
+            gridwidth: 1,
+            linecolor: '#636363',
+            linewidth: 6
+          },
+          showlegend: false,
+          height: 600,
+          width: 1100
     };
 
     // plotly call
