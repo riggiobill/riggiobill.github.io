@@ -117,7 +117,7 @@ function optionChanged(newData) {
     // select and fetch new data when new option is selected
 
     buildCharts(newData);
-    buildCharts(newData);
+    buildMetadata(newData);
 
 }
 
