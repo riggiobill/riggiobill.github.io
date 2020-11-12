@@ -1,7 +1,6 @@
 //build a map of functions, test and fill in as you go
 
 function init() {
-    console.log("init passed")
     // D3 select the dropdown element
     var selected = d3.select("#selDataset");
 
@@ -26,7 +25,6 @@ function init() {
 
 function buildMetadata(sample) {
 
-    console.log("buildMetata passed")
     // filter the data for results, store in array, access object items
     d3.json("samples.json").then((data) => {
         var metadata = data.metadata;
@@ -50,7 +48,6 @@ function buildMetadata(sample) {
 
 function buildCharts(sample) {
     
-    console.log("buildCharts passed")
     // D3 json to select the sample data
     d3.json("samples.json").then((data) => {
         var dataSamples = data.samples;
@@ -171,7 +168,6 @@ function buildCharts(sample) {
 }
 
 function optionChanged(newData) {
-    console.log("optionChanged passed")
     // select and fetch new data when new option is selected
 
     buildCharts(newData);
